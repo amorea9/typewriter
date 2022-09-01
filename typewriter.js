@@ -12,7 +12,7 @@ function init() {
   type2.classList.add("typewritten");
   type2.textContent = "";
   document.querySelector("body").appendChild(type2);
-
+  document.querySelector(".typewritten").textContent = ""; //hides the first h1
   if (type) {
     loop();
   } else {
@@ -30,6 +30,4 @@ function init() {
       setTimeout(loop, 400);
     }
   }
-
-  //how to hide the first h1?
 }
